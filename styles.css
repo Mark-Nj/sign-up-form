@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./assets/Norse-Bold.otf);
+}
+
+:root {
+    --main-width: 67vw;
+}
+
+body {
+    background: url(./assets/green-leaf.jpg), no-repeat,
+    rgb(0, 0, 0, 0.5);
+    font-family: "Norse-Bold", sans-serif;
+}
+#logo {
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    background-color: aliceblue;
+    opacity: 50%;
+    font-size: calc(2rem + 1vw);
+    width: 100vw;
+    height: 10vh;
+}
+#logo img {width: auto; height: 100%;}
+main {
+    background-color: whitesmoke;
+    margin: 0;
+    position: absolute;
+    width: var(--main-width);
+    left: calc(100vw - var(--main-width));
+    top: 0;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: calc(0.5rem + 1vw);
+}
+
+p, button {margin-left: 3vw;}
+
+
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+
+}
+
+form p{margin-left: 0;}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    justify-self: left;
+    padding-left: 3vw;
+}
+.right {
+    justify-self: right;
+    align-self: flex-end;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+input {
+    margin-bottom: 1vh;
+    font-size: 1.5rem;
+}
+input:focus {box-shadow: 1px 1px 5px 5px black;}
+button {
+    background-color: darkgreen;
+    border-radius: 50%;
+    width: 30vw;
+    max-width: fit-content;
+    height: fit-content;
+    font-size: calc(0.5rem + 1vw);
+    margin-top: 3vh;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+#credit {
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    font-size: calc(0.25rem + 1vw);
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
